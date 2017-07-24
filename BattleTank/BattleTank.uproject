@@ -10,11 +10,5 @@
 			"LoadingPhase": "Default"
 		}
 	],
-	"Plugins": [
-		{
-			"Name": "VictoryBPLibrary",
-			"Enabled": false,
-			"MarketplaceURL": "http://www.ue4code.com"
-		}
-	]
+	"Plugins": []
 }
