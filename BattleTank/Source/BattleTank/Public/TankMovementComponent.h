@@ -9,12 +9,16 @@
 /**
  * 
  */
-UCLASS(Blueprintable)
+UCLASS(abstract, Blueprintable)
 class BATTLETANK_API UTankMovementComponent : public UNavMovementComponent
 {
 	GENERATED_BODY()
 	
-	
+public:
+	void RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) override;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnRequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed);
 	
 	
 };

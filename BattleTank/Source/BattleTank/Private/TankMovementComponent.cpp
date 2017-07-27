@@ -4,4 +4,7 @@
 
 
 
+void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool bForceMaxSpeed) {
+	this->OnRequestDirectMove(MoveVelocity, bForceMaxSpeed);
+}
 
